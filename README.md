@@ -5,7 +5,6 @@
 
 ## 💡Project link: [https://pypi.org/project/riskfolio-beta/](https://pypi.org/project/riskfolio-beta/)
 
-[TOC]
 * [📘 Overview: Risk Attribution for Modern Banking Portfolios](#1)
 * [⚖️ From Mean-Variance Allocation to Basel-Aligned Attribution](#2)
 * [🚀 Features](#3)
@@ -24,7 +23,7 @@ This library is still in beta version. Please read instructions carefully before
 
 ---
 
-<h2 id='1'> ## 📘 Overview: Risk Attribution for Modern Banking Portfolios </h2>
+<h2 id='1'> 📘 Overview: Risk Attribution for Modern Banking Portfolios </h2>
 
 In the post-Basel III era, capital allocation is no longer a matter of simple portfolio optimization — it is a regulatory imperative. Banks are required to calculate and manage a series of risk-sensitive metrics such as Risk-Weighted Assets (RWA), Total Common Equity (TCE) allocation, and G-SIB (Global Systemically Important Bank) scores. These measures directly influence a bank’s minimum capital requirements, cost of equity, and even its systemic surcharge, shaping everything from product pricing to strategic asset mix.
 
@@ -32,7 +31,7 @@ This project provides a modular, Python-based library that demonstrates how thes
 
 ---
 
-<h2 id = '2'> ## ⚖️ From Mean-Variance Allocation to Basel-Aligned Attribution </h2>
+<h2 id = '2'> ⚖️ From Mean-Variance Allocation to Basel-Aligned Attribution </h2>
 
 
 Traditional portfolio asset allocation techniques focus on optimizing risk-adjusted returns by balancing expected return, volatility, and correlation — often ignoring regulatory constraints. However, for banks subject to Basel III, capital is the scarce resource, and decisions must be evaluated through the lens of their regulatory cost. For example, a high-yield bond desk might offer attractive returns, but its elevated RWA and G-SIB contribution could erode net profitability once capital charges are considered.
@@ -41,7 +40,7 @@ This library bridges that gap. Instead of optimizing portfolios purely for Sharp
 
 ---
 
-<h2 id = '3'> ## 🚀 Features </h2>
+<h2 id = '3'> 🚀 Features </h2>
 
 - **Capital Charge Computation** – Calculate capital charge and net income from allocated TCE and PnL.  
 - **Attribution Table Generation** – Aggregate key metrics by desk, product, or other dimensions with automatically calculated performance ratios.  
@@ -52,7 +51,7 @@ This library bridges that gap. Instead of optimizing portfolios purely for Sharp
 ---
 
 
-<h2 id = '4'> ## 🧰 Core Functions & Usage Guide </h2>
+<h2 id = '4'> 🧰 Core Functions & Usage Guide </h2>
 
 This section provides a comprehensive overview of the core functions included in the library. Each function is designed to support portfolio risk attribution, Basel III capital calculations, and scenario analysis workflows. Below you’ll find the purpose, key parameters, return values, and sample usage examples for each major function.
 
@@ -179,7 +178,7 @@ adjusted_df = apply_weight_scenario(df, weight_changes=scenario)
 
 ---
 
-<h2 id = '5'> ## 📦 Installation </h2>
+<h2 id = '5'> 📦 Installation </h2>
 
 Use **pip** function in Python to install (easy and convenient):
 
