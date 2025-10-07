@@ -1,6 +1,7 @@
-<center>
+
 # riskfolio
-</center>
+
+
 
 ## 💡Project link: [https://pypi.org/project/riskfolio-beta/](https://pypi.org/project/riskfolio-beta/)
 
