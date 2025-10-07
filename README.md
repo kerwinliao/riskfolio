@@ -5,12 +5,11 @@
 
 ## 💡Project link: [https://pypi.org/project/riskfolio-beta/](https://pypi.org/project/riskfolio-beta/)
 
-* 📘 Overview: Risk Attribution for Modern Banking Portfolios （## 📘 Overview: Risk Attribution for Modern Banking Portfolios）
-* ⚖️ From Mean-Variance Allocation to Basel-Aligned Attribution （## ⚖️ From Mean-Variance Allocation to Basel-Aligned Attribution）
-* 🚀 Features （## 🚀 Features)
-* 🧰 Core Functions & Usage Guide (## 🧰 Core Functions & Usage Guide)
-* 📦 Installation (## 📦 Installation)
-
+* [📘 Overview: Risk Attribution for Modern Banking Portfolios] （## 📘 Overview: Risk Attribution for Modern Banking Portfolios）
+* [⚖️ From Mean-Variance Allocation to Basel-Aligned Attribution] （## ⚖️ From Mean-Variance Allocation to Basel-Aligned Attribution）
+* [🚀 Features] （## 🚀 Features)
+* [🧰 Core Functions & Usage Guide] (## 🧰 Core Functions & Usage Guide)
+* [📦 Installation] (## 📦 Installation)
 ---
 
 <img src="/images/logo.png" alt="riskfolio Logo">
