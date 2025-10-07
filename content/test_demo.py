@@ -1,14 +1,7 @@
 # test_demo.py
 
 import pandas as pd
-from attribution_template import (
-    compute_rwa,
-    allocate_tce,
-    compute_capital_charge,
-    attribution_table,
-    compute_gsib_toy,
-    apply_weight_scenario
-)
+from riskfolio_beta import ( compute_rwa, allocate_tce, compute_capital_charge, attribution_table, compute_gsib_toy, apply_weight_scenario )
 
 # 1️⃣ Load synthetic trade-level data
 print("📥 Loading synthetic transaction data...")
