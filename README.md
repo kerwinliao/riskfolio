@@ -1,4 +1,4 @@
-<img src="logo.png" alt="riskfolio Logo">
+<img src="/images/logo.png" alt="riskfolio Logo">
 
 # riskfolio
 
@@ -42,7 +42,7 @@ This library bridges that gap. Instead of optimizing portfolios purely for Sharp
 
 This section provides a comprehensive overview of the core functions included in the library. Each function is designed to support portfolio risk attribution, Basel III capital calculations, and scenario analysis workflows. Below you’ll find the purpose, key parameters, return values, and sample usage examples for each major function.
 
-To give a try on your own with these functions, you can download the mock data [**here**]().
+To give a try on your own with these functions, you can download the mock data [**here**](https://github.com/kerwinliao/riskfolio/blob/main/content/fif_trades_test.csv).
 
 ---
 
