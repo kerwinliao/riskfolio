@@ -1,6 +1,11 @@
+<center>
+# riskfolio
+</center>
+
+## 💡Project link: [https://pypi.org/project/riskfolio-beta/](https://pypi.org/project/riskfolio-beta/)
+
 <img src="/images/logo.png" alt="riskfolio Logo">
 
-# riskfolio
 
 **riskfolio** is a Python library for capital attribution, RWA (Risk-Weighted Assets) analysis, and profitability evaluation in financial risk management. It provides a modular and object-oriented framework to calculate, attribute, and visualize key risk metrics such as TCE (Tangible Common Equity) allocation, capital charge, return on capital, and RWA share.  
 
