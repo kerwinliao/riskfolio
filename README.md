@@ -1,5 +1,5 @@
 
-<h1 align=center> riskfolio </h1>
+<h1 align=center> riskfolio_beta </h1>
 
 
 
@@ -76,9 +76,9 @@ Computes a simplified Global Systemically Important Bank (G-SIB) score based on 
 **Example:**
 
 ```python
-from riskfolio.reporting import compute_gsib_toy
+from riskfolio_beta.core import AttributionEngine
 
-scores = compute_gsib_toy(df)
+scores = AttributionEngine.compute_gsib_toy(df)
 print(scores)
 ```
 
@@ -115,9 +115,9 @@ Generates a risk and return attribution table aggregated by one or more portfoli
 **Example:**
 
 ```python
-from riskfolio.reporting import attribution_table
+from riskfolio_beta.core import AttributionEngine
 
-summary = attribution_table(df, dims=("desk", "product"))
+summary = AttributionEngine.attribution_table(df, dims=("desk", "product"))
 print(summary.head())
 ```
 
@@ -127,46 +127,6 @@ print(summary.head())
 |------------|------------------|----------|---------|---------|---------|------------|-------------|----------------|------------|------------|
 | Credit     | HY_Bond          | 21000000 | 1900000 | 890000  | 112000  | 450000     | 88000       | 0.1956         | 0.0988     | 0.42       |
 | Credit     | NonAgency_MBS    | 34000000 | 2700000 | 1100000 | 145000  | 550000     | 105000      | 0.1909         | 0.0954     | 0.52       |
-
----
-
-### 3. `apply_weight_scenario(df: pd.DataFrame, weight_changes: dict, level="product", col="notional") -> pd.DataFrame`
-
-**Purpose:**  
-Applies scenario adjustments to portfolio weights for sensitivity testing or stress scenario analysis. This function scales portfolio exposures (and related metrics like `EAD`) according to user-defined multipliers and recalculates RWA.
-
-**Parameters:**
-
-| Name | Type | Description |
-|------|------|-------------|
-| `df` | `pd.DataFrame` | Original portfolio data. |
-| `weight_changes` | `dict` | Mapping of portfolio categories (e.g., products) to scaling factors. Example: `{"HY_Bond": 1.2, "NonAgency_MBS": 0.8}`. |
-| `level` | `str` | Column used for scaling (default: `"product"`). |
-| `col` | `str` | Exposure column to scale (default: `"notional"`). |
-
-**Returns:**  
-`pd.DataFrame` – A modified portfolio DataFrame with updated exposure and RWA calculations.
-
-**Example:**
-
-```python
-from riskfolio.reporting import apply_weight_scenario
-
-scenario = {
-    "HY_Bond": 1.2,         # Increase HY bond exposure by 20%
-    "NonAgency_MBS": 0.8    # Decrease MBS exposure by 20%
-}
-
-adjusted_df = apply_weight_scenario(df, weight_changes=scenario)
-```
-
-**Output Preview:**
-
-| product       | notional (after) | EAD (after) | RWA (after) |
-|---------------|------------------|-------------|--------------|
-| HY_Bond       | 25200000         | 2280000     | 920000       |
-| NonAgency_MBS | 27200000         | 2160000     | 880000       |
-
 ---
 
 ✅ **Best Practice Tips:**
