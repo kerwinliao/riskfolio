@@ -76,8 +76,9 @@ Computes a simplified Global Systemically Important Bank (G-SIB) score based on 
 **Example:**
 
 ```python
-from riskfolio_beta.core import AttributionEngine
+from riskfolio_beta.core import AttributionEngine, Portfolio
 
+df = Portfolio.from_df(df)
 scores = AttributionEngine.compute_gsib_toy(df)
 print(scores)
 ```
@@ -115,8 +116,9 @@ Generates a risk and return attribution table aggregated by one or more portfoli
 **Example:**
 
 ```python
-from riskfolio_beta.core import AttributionEngine
+from riskfolio_beta.core import AttributionEngine, Portfolio
 
+df = Portfolio.from_df(df)
 summary = AttributionEngine.attribution_table(df, dims=("desk", "product"))
 print(summary.head())
 ```
